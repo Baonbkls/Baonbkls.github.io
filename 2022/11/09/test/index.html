@@ -1,0 +1,381 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>test | 宝的blog</title><meta name="author" content="宝"><meta name="copyright" content="宝"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="步入Linux的现代方法一、Linux的初步认识（1）操作系统以及Linux操作系统的认识Linux或GNU&#x2F;Linux（Linux真正的名字）是一个类Unix操作系统 Linux的定义组件是Linux内核，是Linus Torvalds最初单独开发的操作系统内核 （2）关于VM上不同Linux发行版的介绍目前主流Linux发行版主要有：Ubuntu（基于Debian）、Centos（基于Fedo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="test">
+<meta property="og:url" content="http://example.com/2022/11/09/test/index.html">
+<meta property="og:site_name" content="宝的blog">
+<meta property="og:description" content="步入Linux的现代方法一、Linux的初步认识（1）操作系统以及Linux操作系统的认识Linux或GNU&#x2F;Linux（Linux真正的名字）是一个类Unix操作系统 Linux的定义组件是Linux内核，是Linus Torvalds最初单独开发的操作系统内核 （2）关于VM上不同Linux发行版的介绍目前主流Linux发行版主要有：Ubuntu（基于Debian）、Centos（基于Fedo">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+<meta property="article:published_time" content="2022-11-09T13:40:11.000Z">
+<meta property="article:modified_time" content="2022-11-09T13:43:02.273Z">
+<meta property="article:author" content="宝">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/11/09/test/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'test',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-11-09 21:43:02'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://w.wallhaven.cc/full/p9/wallhaven-p9273e.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">宝的blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">test</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-09T13:40:11.000Z" title="发表于 2022-11-09 21:40:11">2022-11-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-11-09T13:43:02.273Z" title="更新于 2022-11-09 21:43:02">2022-11-09</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="test"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="步入Linux的现代方法"><a href="#步入Linux的现代方法" class="headerlink" title="步入Linux的现代方法"></a>步入Linux的现代方法</h1><h3 id="一、Linux的初步认识"><a href="#一、Linux的初步认识" class="headerlink" title="一、Linux的初步认识"></a>一、Linux的初步认识</h3><h5 id="（1）操作系统以及Linux操作系统的认识"><a href="#（1）操作系统以及Linux操作系统的认识" class="headerlink" title="（1）操作系统以及Linux操作系统的认识"></a>（1）操作系统以及Linux操作系统的认识</h5><p><strong>Linux</strong>或<strong>GNU/Linux</strong>（Linux真正的名字）是一个<a target="_blank" rel="noopener" href="https://simple.wikipedia.org/wiki/Unix-like">类Unix</a><a target="_blank" rel="noopener" href="https://simple.wikipedia.org/wiki/Operating_system">操作系统</a></p>
+<p>Linux的定义组件是<a target="_blank" rel="noopener" href="https://simple.wikipedia.org/wiki/Linux_kernel">Linux内核</a>，是<a target="_blank" rel="noopener" href="https://simple.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a>最初单独开发的<a target="_blank" rel="noopener" href="https://simple.wikipedia.org/wiki/Kernel_(computing)">操作系统内核</a></p>
+<h5 id="（2）关于VM上不同Linux发行版的介绍"><a href="#（2）关于VM上不同Linux发行版的介绍" class="headerlink" title="（2）关于VM上不同Linux发行版的介绍"></a>（2）关于VM上不同Linux发行版的介绍</h5><p>目前主流Linux发行版主要有：Ubuntu（基于Debian）、Centos（基于Fedora）、Kali（基于Debian）……</p>
+<h3 id="二、准备工作（VMware虚拟机的使用）"><a href="#二、准备工作（VMware虚拟机的使用）" class="headerlink" title="二、准备工作（VMware虚拟机的使用）"></a>二、准备工作（VMware虚拟机的使用）</h3><h5 id="（1）安装VMware-Workstation-Pro"><a href="#（1）安装VMware-Workstation-Pro" class="headerlink" title="（1）安装VMware Workstation Pro"></a>（1）安装VMware Workstation Pro</h5><p>由于许多Linux操作在window系统上实现会被检测，安全和方便起见，显然虚拟机环境是不错的选择，这里我们选择VMware Workstation Pro</p>
+<h5 id="（2）Ubuntu的安装与使用"><a href="#（2）Ubuntu的安装与使用" class="headerlink" title="（2）Ubuntu的安装与使用"></a>（2）Ubuntu的安装与使用</h5><p>记得到官网下载ISO镜像文件<a target="_blank" rel="noopener" href="https://ubuntu.com/download">获取乌班图|下载|乌班图 (ubuntu.com)</a></p>
+<h3 id="三、步入Linux的世界"><a href="#三、步入Linux的世界" class="headerlink" title="三、步入Linux的世界"></a>三、步入Linux的世界</h3><h5 id="（1）Linux四大组成部分"><a href="#（1）Linux四大组成部分" class="headerlink" title="（1）Linux四大组成部分"></a>（1）Linux四大组成部分</h5><p><strong>Linux kernel 内核</strong>：Linux内核是 Linux 操作系统（OS）的主要组件，也是计算机硬件与其进程之间的核心接口。它负责两者之间的通信，还要尽可能高效地管理资源</p>
+<p><strong>Linux shell</strong>：系统的用户界面，提供了用户与内核进行交互操作的一种接口</p>
+<p><strong>Linux 文件系统</strong>：文件系统是文件存放在磁盘等存储设备上的组织方法</p>
+<p> <strong>Aplication 应用程序</strong>：标准的Linux系统一般都有一套都有称为应用程序的程序集，它包括文本编辑器、编程语言、XWindow、办公套件、Internet工具和数据库等</p>
+<h5 id="（2）GUI和GNU"><a href="#（2）GUI和GNU" class="headerlink" title="（2）GUI和GNU"></a>（2）GUI和GNU</h5><img src="E:\Pictures\无标题.png" alt="无标题" style="zoom: 33%;" />
+
+<h5 id="（3）Linux-内核：操作系统"><a href="#（3）Linux-内核：操作系统" class="headerlink" title="（3）Linux 内核：操作系统"></a>（3）Linux 内核：操作系统</h5><p>1.硬件设备  管理使用</p>
+<p>2.软件程序 （系统）—&gt;操作系统</p>
+<p>3.系统内存</p>
+<p>4.文件管理：保存文件，删除文件，修改文件……</p>
+<h5 id="（4）Linux文件系统"><a href="#（4）Linux文件系统" class="headerlink" title="（4）Linux文件系统"></a>（4）Linux文件系统</h5><p>文件系统：读、写的标准</p>
+<p>Windows上主要的文件系统：NTFS</p>
+<p>Linux 支持的文件系统类型：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ext,  ext2, ext3, ext4, hpfs, iso9660, JFS, minix,</span><br><span class="line">       msdos, ncpfs, nfs, ntfs, proc, Reiserfs, smb, sysv, umsdos, vfat, XFS, xiafs</span><br></pre></td></tr></table></figure>
+
+<h5 id="（5）GNU组织"><a href="#（5）GNU组织" class="headerlink" title="（5）GNU组织"></a>（5）GNU组织</h5><p>Unix上具有的一些软件，Linux内核本身没有，所以GNU他们模仿Unix，为Linux写了一些必要的软件</p>
+<p>1.GNU核心：原本在Unix上的一些命令和工具，被模仿（移植） 到了Linux上。</p>
+<p>供Linux使用的这套工具：coreutils coreutilities 软件包</p>
+<p>（1）用来处理文件的工具</p>
+<p>（2）用来操作文本的工具</p>
+<p>（3）用来管理进程的工具</p>
+<p>2.shell（壳层） 提供给用户使用的软件：用户拿它来使用电脑，并且和电脑交互。</p>
+<p>命令行壳层提供一个命令行界面（CLI）；而图形壳层提供一个图形用户界面（GUI）。</p>
+<p>通常情况下，我们称Linux shell 指的是 CLI  Command-Line Interface</p>
+<p>3.shell———CLI和GUI</p>
+<p>CLI：不同的Linux shell：Bash shell 基础shell 、Zsh、Ash、Korn、Tcsh</p>
+<p>GUI Desktop：X Windows、KDE（菜单、快捷方式、任务栏、最小化应用…）、GNOME、Unity</p>
+<h3 id="四、Shell命令"><a href="#四、Shell命令" class="headerlink" title="四、Shell命令"></a>四、Shell命令</h3><h5 id="（1）CLI终端Terminal基本显示介绍"><a href="#（1）CLI终端Terminal基本显示介绍" class="headerlink" title="（1）CLI终端Terminal基本显示介绍"></a>（1）CLI终端Terminal基本显示介绍</h5><p>bao@bao-virtual-machine:~/Desktop$</p>
+<p>用户名@机器名：当前所在目录 $等待用户输入</p>
+<h5 id="（2）Linux命令参数"><a href="#（2）Linux命令参数" class="headerlink" title="（2）Linux命令参数"></a>（2）Linux命令参数</h5><p>1.输入 <strong>ls</strong>：展示当前目录下的文件</p>
+<p><strong>ll</strong>：显示的更详细</p>
+<p><strong>最装逼的：ls -alF</strong></p>
+<p>……命令太多太多</p>
+<p>用 man 后+ 指令 可以显示出指令的作用 </p>
+<p>2.<strong>键盘上常用键位及其功能</strong>：</p>
+<p>上下键可以切换短期使用的命令</p>
+<p>PgUp PgDn可以上下翻页  输入q键退出</p>
+<p>CTRL + L 或者输入clear 即可清屏</p>
+<p>3.<a target="_blank" rel="noopener" href="https://wangchujiang.com/linux-command/">Linux命令搜索引擎</a> </p>
+<h5 id="（3）Linux根目录解析"><a href="#（3）Linux根目录解析" class="headerlink" title="（3）Linux根目录解析"></a>（3）Linux根目录解析</h5><p><em><strong>Linux一切皆文件</strong></em></p>
+<p>\ 反斜线 Windows</p>
+<p>/ 正斜线 Linux</p>
+<p><strong>在Linux终端中：</strong></p>
+<p> /Linux根目录 最终的</p>
+<p>/bin 二进制目录GNU工具 ls等自带的命令   存放许多用户级</p>
+<p>/cdrom 光盘</p>
+<p>/etc 系统文件配置目录</p>
+<p>/home 主目录，显示所有用户目录</p>
+<p>/lib 库目录</p>
+<p>/lost+found 意外情况文件所在位置</p>
+<p>/mnt 挂载目录  挂载–外在的设备和电脑进行连接</p>
+<p>/proc 伪文件系统</p>
+<p>/run 运行目录</p>
+<p>/tmp 临时目录 （temp）</p>
+<p>/var 可变目录 （临时文件，经常会发生一些变化的文件）</p>
+<p>/boot 启动目录</p>
+<p>/dev 设备目录</p>
+<p>/media 媒体目录</p>
+<p>/opt 可选目录</p>
+<p>/root 根目录 管理员文件夹</p>
+<p>/sbin 系统二进制目录，GNU高级管理员使用的命令工具</p>
+<p>/srv 服务目录 本地服务</p>
+<p>/usr 用户二进制目录，GNU工具   自己安装的软件到/usr/bin里面找</p>
+<p><strong>FHS文件系统层级标准</strong></p>
+<p>ps：多使用，多操作，慢慢熟悉，忘记了多搜搜</p>
+<h5 id="（4）cd命令"><a href="#（4）cd命令" class="headerlink" title="（4）cd命令"></a>（4）cd命令</h5><p>cd   /文件名1/文件名2   … 进入某一个文件里面</p>
+<p>cd ~ 或者 直接cd  进入（回到）用户目录  （ ~ 可以理解为用户目录）</p>
+<p>cd - 返回到上一次操作的目录</p>
+<p>cd .. 返回到上一层目录</p>
+<p>cd ../.. 返回上一层的上一层目录….（自行体会）</p>
+<p>pwd 显示当前的目录的绝对路径</p>
+<p>详细<a target="_blank" rel="noopener" href="https://wangchujiang.com/linux-command/">Linux命令搜索引擎</a></p>
+<h5 id="（5）Linux中Ctrl-C-的作用"><a href="#（5）Linux中Ctrl-C-的作用" class="headerlink" title="（5）Linux中Ctrl + C 的作用"></a>（5）Linux中Ctrl + C 的作用</h5><p>命令执行过程中强制退出</p>
+<p>如果非要拷贝命令 1.右键选取 然后点击copy  2. 选取后 按住Ctrl + Shift + C / V </p>
+<h5 id="（6）文件目录"><a href="#（6）文件目录" class="headerlink" title="（6）文件目录"></a>（6）文件目录</h5><p>1.绝对路径（全） 不论到天涯海角，只要给你，你就能找到</p>
+<p>在Windows上：  盘符：\文件夹\ … \文件名.文件后缀</p>
+<p>银河系太阳系地球亚洲中国北京海淀区中关村丹棱路5号微软大厦2楼12-14层微软亚太研究院</p>
+<p>2.相对路径（不全）</p>
+<p>一定要设置故事背景前提，即你在哪?</p>
+<p>相对而言  相对国家 相对城市  相对区而言</p>
+<p>1）北京…</p>
+<p>海淀区中关村丹棱路5号微软大厦2楼12-14层微软亚太研究院</p>
+<p>2）北京朝阳区</p>
+<p>海淀区中关村丹棱路5号微软大厦2楼12-14层微软亚太研究院</p>
+<p>3）上海</p>
+<p>北京海淀区中关村丹棱路5号微软大厦2楼12-14层微软亚太研究院</p>
+<p><strong>我在哪？</strong></p>
+<p>E:\software</p>
+<p><strong>5E相对路径-&gt;相对于谁？</strong></p>
+<p>\5E\5EClient</p>
+<p><strong>Linux上：</strong></p>
+<p><strong>~</strong> 代表 ： /home/bao/ 即用户目录</p>
+<p><strong>·</strong>使用相对路径打开后面的文件时  文件名前边不要加/</p>
+<p><strong>·</strong>若加 / 则Linux会在根目录下创建一个新的临时文件，此时不再是相对路径，而是变成了绝对路径</p>
+<p><strong>·</strong>或则加  ./ 意思为当前目录下什么什么文件夹     或者 ~/ 全局路径</p>
+<p><strong>拓展：</strong> 单点符 .  当前文件夹     双点符 .. 当前目录的父目录（上一级目录）</p>
+<p><strong>练习：</strong>自己创建文件夹，然后来回进入，反复练习 ls  cd 命令</p>
+<h5 id="（7）-ls进阶用法，文件下各种匹配过滤符号"><a href="#（7）-ls进阶用法，文件下各种匹配过滤符号" class="headerlink" title="（7）  ls进阶用法，文件下各种匹配过滤符号"></a>（7）  ls进阶用法，文件下各种匹配过滤符号</h5><p>用<strong>ls -l</strong> 查找文件时  后面的<strong>文件扩展匹配符</strong>：  *****  代表多个符号      <strong>？</strong> 代表一个符号</p>
+<p><strong>元字符通配符</strong>： ls -l f[a-x].txt    意思为找字母a-x的f[]ck的.txt文件</p>
+<p> ls -l f[！a-x].txt   加个感叹号懂的都懂</p>
+<h5 id="（8）touch命令"><a href="#（8）touch命令" class="headerlink" title="（8）touch命令"></a>（8）touch命令</h5><p>1.更新文件写入时间  </p>
+<p>2.用touch 一个新的文件名  来创建一个新的文件</p>
+<h5 id="（9）cp命令"><a href="#（9）cp命令" class="headerlink" title="（9）cp命令"></a>（9）cp命令</h5><p><strong>cp文件</strong>的格式： cp 你想复制的文件  你想复制到哪</p>
+<p>​                            cp 源文件                 目标文件            若目标文件不存在  则cp会创建一个目标文件</p>
+<p>若目标文件已存在 ，则源文件内容会覆盖目标文件的内容</p>
+<p>一般使用时 应写为：cp  -i  源文件  目标文件   此时会给你一个提示 输入 y 或 n</p>
+<p>覆盖文件之后，文件写入时间会发生改变</p>
+<p><strong>cp文件夹</strong>的格式：cp  -r  源文件夹的（绝对或相对）路径   目标文件夹的（绝对或相对）路径</p>
+<p><strong>cp文件到文件夹</strong>的格式：cp 源文件 目标文件夹路径   </p>
+<h5 id="（10）终端光标移动小技巧"><a href="#（10）终端光标移动小技巧" class="headerlink" title="（10）终端光标移动小技巧"></a>（10）终端光标移动小技巧</h5><p><strong>Tab键：</strong>自动补全</p>
+<p><strong>Ctrl + 方向左右键</strong> 可以快速跳跃符号前的字母</p>
+<p><strong>Ctrl + L</strong> 可以快速清屏</p>
+<p><strong>Ctrl + A</strong> 快速跳到命令的开头    <strong>Ctrl + E</strong>  快速跳到命令的结尾</p>
+<p><strong>Ctrl + H</strong> 从选定字符开始往前删除</p>
+<p><strong>Ctrl + T</strong> 可以将选定字符前的字符往后移动</p>
+<p><strong>Ctrl + U</strong> 将光标前所有字符删除   <strong>Ctrl + K</strong> 将光标后所有字符删除                     </p>
+<p><strong>Ctrl +  J</strong>  相当于回车键                                                                                                                                       </p>
+<h5 id="（11）-lnk链接文件（快捷方式）"><a href="#（11）-lnk链接文件（快捷方式）" class="headerlink" title="（11）.lnk链接文件（快捷方式）"></a>（11）.lnk链接文件（快捷方式）</h5><p>Linux上：链接文件</p>
+<ol>
+<li><p><strong>符号链接（软链接）</strong>——快捷方式     原来的文件/文件夹 必须是存在的</p>
+<p>Symbolic links</p>
+</li>
+<li><p><strong>硬链接</strong>  副本  原来的文件/文件夹 必须是存在的</p>
+<p>Soft links</p>
+</li>
+</ol>
+<p>创建软链接：ln -s 源文件 创建的快捷方式名称    不同硬盘之间可以创建</p>
+<p>创建硬链接就是直接创建    只能在同一个硬盘中创建</p>
+<h5 id="（12）mv命令（move）"><a href="#（12）mv命令（move）" class="headerlink" title="（12）mv命令（move）"></a>（12）mv命令（move）</h5><p><strong>重命名：</strong> mv 重命名的文件 重命名的名字</p>
+<p><strong>移动文件：</strong>mv 要移动的文件 要移动到的位置</p>
+<p><strong>骚操作：</strong>移动文件后 输入 cd !$  即可进入上一条命令执行的最后的路径 然后再 ls 即可查看</p>
+<h5 id="（13）rm命令（remove）———非常危险！！"><a href="#（13）rm命令（remove）———非常危险！！" class="headerlink" title="（13）rm命令（remove）———非常危险！！"></a>（13）rm命令（remove）———非常危险！！</h5><p>使用rm命令删除时一种彻底删除方式</p>
+<p>用 rm 文件名    直接删除</p>
+<p>一般使用：rm -i -r 文件名    会出现提示 输入y或n  遍历删除 </p>
+<p>rm命令比较危险，一般使用第三方删除软件代替rm</p>
+<h5 id="（14）目录（文件夹）"><a href="#（14）目录（文件夹）" class="headerlink" title="（14）目录（文件夹）"></a>（14）目录（文件夹）</h5><p>创建文件夹的命令：mkdir（make  directories）</p>
+<p>创建副目录（多级文件夹）：mkdir -p 文件夹1/文件夹2/…</p>
+<p>创建文件的命令：touch</p>
+<p>删除空目录：rmdir     常用还是 rm</p>
+<h5 id="（15）文件类型"><a href="#（15）文件类型" class="headerlink" title="（15）文件类型"></a>（15）文件类型</h5><p>查看文件类型：file  文件名/</p>
+<p><a target="_blank" rel="noopener" href="https://wangchujiang.com/linux-command/">Linux命令搜索引擎</a></p>
+<h5 id="（16）查看文件"><a href="#（16）查看文件" class="headerlink" title="（16）查看文件"></a>（16）查看文件</h5><p>用于一些短的文件：<strong>cat</strong>  <strong>文件名</strong></p>
+<p><strong>cat  -A</strong>  可以显示写入的所有空格、换行等</p>
+<p><strong>more 文件名</strong>       可以多页面展示文件，  B键向上翻页 ，空格向下翻页 ，回车一行一行翻 ，Q退出</p>
+<p><strong>less 文件名</strong>     PageUp  PageDown可以上下翻页  Q键退出  还可以输入关键字母回车查找关键字  数字前加/</p>
+<p><strong>tail  -n  数字  文件名</strong>         查看文件末尾几行</p>
+<p><strong>head -n  数字  文件名</strong>      查看文件开头几行</p>
+<p>直接用 tail 或 head  文件名   均只显示十行</p>
+<h3 id="五、系统上的Shell"><a href="#五、系统上的Shell" class="headerlink" title="五、系统上的Shell"></a>五、系统上的Shell</h3><h5 id="（1）Linux当中的任务管理器"><a href="#（1）Linux当中的任务管理器" class="headerlink" title="（1）Linux当中的任务管理器"></a>（1）Linux当中的任务管理器</h5><p>在终端中输入： top         PageUp / Down 翻页</p>
+<p><strong>ps命令</strong> 用于报告当前系统的进程状态… （有关进程）  关于ps的更多命令请自行查询</p>
+<p>kill  进程ID            将一个进程干掉</p>
+<h5 id="（2）挂载"><a href="#（2）挂载" class="headerlink" title="（2）挂载"></a>（2）挂载</h5><p>当把一个电脑本身不存在的硬件插入电脑当中，电脑创建一个临时的盘供用户使用，这个过程就叫做挂载</p>
+<p>Linux中，USB挂载到    media文件 / 用户名 / USB  （非真实路径）</p>
+<p><code>sudo fdisk -l</code>显示当前使用的挂载设备的信息   Device  为设备真实挂载分区</p>
+<p><code>sudo mount /设备真实挂载分区 /mnt</code>  将原挂载目录的东西映射到mnt文件下面，转变挂载路径</p>
+<p><code>sudo umount /mnt</code>   卸载挂载目录下的文件   若要卸载/media下的挂载目录，需要先退出USB目录，结束USB的使用进程</p>
+<p><code>df</code> 显示磁盘相关的信息  <strong>Filesystem</strong> <em>挂载分区</em>   <strong>1K-blocks</strong>  <em>能容纳多少个1024字节块大小</em>  <strong>Used</strong> <em>已使用</em></p>
+<p><strong>Available</strong> <em>剩余可使用1024字节大小</em>     <strong>Mount on</strong> <em>挂载的目录</em></p>
+<p><code>df -h</code>    显示的更清楚     <code>du -h</code>  显示每个文件和目录的磁盘使用空间</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">宝</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2022/11/09/test/">http://example.com/2022/11/09/test/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">宝的blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/11/07/hello-world/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://w.wallhaven.cc/full/p9/wallhaven-p9273e.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">宝</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AD%A5%E5%85%A5Linux%E7%9A%84%E7%8E%B0%E4%BB%A3%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">步入Linux的现代方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81Linux%E7%9A%84%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86"><span class="toc-number">1.0.1.</span> <span class="toc-text">一、Linux的初步认识</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%BB%A5%E5%8F%8ALinux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%A4%E8%AF%86"><span class="toc-number">1.0.1.0.1.</span> <span class="toc-text">（1）操作系统以及Linux操作系统的认识</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E5%85%B3%E4%BA%8EVM%E4%B8%8A%E4%B8%8D%E5%90%8CLinux%E5%8F%91%E8%A1%8C%E7%89%88%E7%9A%84%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.0.1.0.2.</span> <span class="toc-text">（2）关于VM上不同Linux发行版的介绍</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C%EF%BC%88VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%89"><span class="toc-number">1.0.2.</span> <span class="toc-text">二、准备工作（VMware虚拟机的使用）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E5%AE%89%E8%A3%85VMware-Workstation-Pro"><span class="toc-number">1.0.2.0.1.</span> <span class="toc-text">（1）安装VMware Workstation Pro</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%882%EF%BC%89Ubuntu%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8"><span class="toc-number">1.0.2.0.2.</span> <span class="toc-text">（2）Ubuntu的安装与使用</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%AD%A5%E5%85%A5Linux%E7%9A%84%E4%B8%96%E7%95%8C"><span class="toc-number">1.0.3.</span> <span class="toc-text">三、步入Linux的世界</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%881%EF%BC%89Linux%E5%9B%9B%E5%A4%A7%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="toc-number">1.0.3.0.1.</span> <span class="toc-text">（1）Linux四大组成部分</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%882%EF%BC%89GUI%E5%92%8CGNU"><span class="toc-number">1.0.3.0.2.</span> <span class="toc-text">（2）GUI和GNU</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%883%EF%BC%89Linux-%E5%86%85%E6%A0%B8%EF%BC%9A%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.0.3.0.3.</span> <span class="toc-text">（3）Linux 内核：操作系统</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%884%EF%BC%89Linux%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.0.3.0.4.</span> <span class="toc-text">（4）Linux文件系统</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%885%EF%BC%89GNU%E7%BB%84%E7%BB%87"><span class="toc-number">1.0.3.0.5.</span> <span class="toc-text">（5）GNU组织</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81Shell%E5%91%BD%E4%BB%A4"><span class="toc-number">1.0.4.</span> <span class="toc-text">四、Shell命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%881%EF%BC%89CLI%E7%BB%88%E7%AB%AFTerminal%E5%9F%BA%E6%9C%AC%E6%98%BE%E7%A4%BA%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.0.4.0.1.</span> <span class="toc-text">（1）CLI终端Terminal基本显示介绍</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%882%EF%BC%89Linux%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0"><span class="toc-number">1.0.4.0.2.</span> <span class="toc-text">（2）Linux命令参数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%883%EF%BC%89Linux%E6%A0%B9%E7%9B%AE%E5%BD%95%E8%A7%A3%E6%9E%90"><span class="toc-number">1.0.4.0.3.</span> <span class="toc-text">（3）Linux根目录解析</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%884%EF%BC%89cd%E5%91%BD%E4%BB%A4"><span class="toc-number">1.0.4.0.4.</span> <span class="toc-text">（4）cd命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%885%EF%BC%89Linux%E4%B8%ADCtrl-C-%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">1.0.4.0.5.</span> <span class="toc-text">（5）Linux中Ctrl + C 的作用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%886%EF%BC%89%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95"><span class="toc-number">1.0.4.0.6.</span> <span class="toc-text">（6）文件目录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%887%EF%BC%89-ls%E8%BF%9B%E9%98%B6%E7%94%A8%E6%B3%95%EF%BC%8C%E6%96%87%E4%BB%B6%E4%B8%8B%E5%90%84%E7%A7%8D%E5%8C%B9%E9%85%8D%E8%BF%87%E6%BB%A4%E7%AC%A6%E5%8F%B7"><span class="toc-number">1.0.4.0.7.</span> <span class="toc-text">（7）  ls进阶用法，文件下各种匹配过滤符号</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%888%EF%BC%89touch%E5%91%BD%E4%BB%A4"><span class="toc-number">1.0.4.0.8.</span> <span class="toc-text">（8）touch命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%889%EF%BC%89cp%E5%91%BD%E4%BB%A4"><span class="toc-number">1.0.4.0.9.</span> <span class="toc-text">（9）cp命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%8810%EF%BC%89%E7%BB%88%E7%AB%AF%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E5%B0%8F%E6%8A%80%E5%B7%A7"><span class="toc-number">1.0.4.0.10.</span> <span class="toc-text">（10）终端光标移动小技巧</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%8811%EF%BC%89-lnk%E9%93%BE%E6%8E%A5%E6%96%87%E4%BB%B6%EF%BC%88%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%EF%BC%89"><span class="toc-number">1.0.4.0.11.</span> <span class="toc-text">（11）.lnk链接文件（快捷方式）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%8812%EF%BC%89mv%E5%91%BD%E4%BB%A4%EF%BC%88move%EF%BC%89"><span class="toc-number">1.0.4.0.12.</span> <span class="toc-text">（12）mv命令（move）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%8813%EF%BC%89rm%E5%91%BD%E4%BB%A4%EF%BC%88remove%EF%BC%89%E2%80%94%E2%80%94%E2%80%94%E9%9D%9E%E5%B8%B8%E5%8D%B1%E9%99%A9%EF%BC%81%EF%BC%81"><span class="toc-number">1.0.4.0.13.</span> <span class="toc-text">（13）rm命令（remove）———非常危险！！</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%8814%EF%BC%89%E7%9B%AE%E5%BD%95%EF%BC%88%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%89"><span class="toc-number">1.0.4.0.14.</span> <span class="toc-text">（14）目录（文件夹）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%8815%EF%BC%89%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.0.4.0.15.</span> <span class="toc-text">（15）文件类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%8816%EF%BC%89%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6"><span class="toc-number">1.0.4.0.16.</span> <span class="toc-text">（16）查看文件</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E7%B3%BB%E7%BB%9F%E4%B8%8A%E7%9A%84Shell"><span class="toc-number">1.0.5.</span> <span class="toc-text">五、系统上的Shell</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%881%EF%BC%89Linux%E5%BD%93%E4%B8%AD%E7%9A%84%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E5%99%A8"><span class="toc-number">1.0.5.0.1.</span> <span class="toc-text">（1）Linux当中的任务管理器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E6%8C%82%E8%BD%BD"><span class="toc-number">1.0.5.0.2.</span> <span class="toc-text">（2）挂载</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/11/09/test/" title="test"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="test"/></a><div class="content"><a class="title" href="/2022/11/09/test/" title="test">test</a><time datetime="2022-11-09T13:40:11.000Z" title="发表于 2022-11-09 21:40:11">2022-11-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/07/hello-world/" title="Hello World"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/11/07/hello-world/" title="Hello World">Hello World</a><time datetime="2022-11-07T14:50:36.769Z" title="发表于 2022-11-07 22:50:36">2022-11-07</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 宝</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'http://example.com/2022/11/09/test/'
+    this.page.identifier = '/2022/11/09/test/'
+    this.page.title = 'test'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+
+  document.getElementById('darkmode').addEventListener('click', () => {
+    setTimeout(() => window.disqusReset(), 200)
+  })
+}
+
+if ('Valine' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_clock_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_injector_config();
+  }
+  </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js"></script><!-- hexo injector body_end end --></body></html>
